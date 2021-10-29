@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import CommunityRewardsDAO from "../views/CommunityRewardsDAO.vue";
+import CommunityRewardsDAOApprove from "../views/CommunityRewardsDAOApprove.vue";
 import CommunityRewardsDAT from "../views/CommunityRewardsDAT.vue";
 
 Vue.use(VueRouter);
@@ -15,6 +16,11 @@ const routes = [
         path: "",
         name: "Rewards",
         component: CommunityRewardsDAO
+      },
+      {
+        path: "/dao-approve",
+        name: "RewardsDAOApprove",
+        component: CommunityRewardsDAOApprove
       },
       {
         path: "/dat",
